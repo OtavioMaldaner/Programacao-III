@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    --cor-principal: #47B4FC;
+    --cor-secundaria: #1c1c1c;
+    --cor-terciaria: #ededed;
+    --cor-sombra: #1c1c1cb7;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, var(--cor-terciaria), var(--cor-principal));
+}
+header img {
+    height: 125px;
+    width: 125px;
+    border-radius: 100px;
+    border: 2px solid var(--cor-sombra);
+}
+
+header {
+    text-align: center;
+    padding-top: 5vh;
+}
+.container {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+.conteudo {
+    text-align: center;
+    border: 2px solid var(--cor-secundaria);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 85vw;
+}
+.conteudo > a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+.conteudo:hover{
+    background-color: var(--cor-terciaria);
+    transition: all 0.5s ease 0s;
+    box-shadow: 2px 2px 2px var(--cor-sombra);
+}
+main{
+    padding: 5vh 5vw;
+}
+footer{
+    text-align: center;
+    padding: 5vh 5vw;
+    color: var(--cor-secundaria);
+}
+footer img {
+    width: 75px;
+    height: 80px;
+}
+@media all and (min-width:700px){ 
+    body {
+        background-image: linear-gradient(to bottom right, var(--cor-secundaria), var(--cor-terciaria));
+        color: var(--cor-terciaria);
+    }
+    .conteudo {
+        text-align: center;
+        border: 2px solid var(--cor-secundaria);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        color: var(--cor-terciaria);
+    }
+    .conteudo > a {
+        text-decoration: none;
+        color: var(--cor-secundaria);
+    }
+    .conteudo:hover{
+        background-color: var(--cor-terciaria);
+        transition: all 0.5s ease 0s;
+        box-shadow: 2px 2px 2px var(--cor-sombra);
+    }
+}
