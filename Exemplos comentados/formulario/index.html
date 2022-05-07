@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro - Exemplo</title>
+</head>
+<body>
+    <!-- Os formulários são usados para envio de informações de uma página para o servidor ou para processamento.
+    Quando fazemos uma postagem no instagram estamos enviando informações, por exemplo. Assim, a tag FORM indica
+    que o conjunto de dados que está dentro dela será enviado para uma determinada página (atributo action) utilizando
+    o método (atributo method) GET ou POST.
+    -->
+    <form action='#' method='GET'>
+        <!-- A tag FIELDSET cria visualmente um agrupamento de elementos -->
+        <fieldset>
+            <!-- LEGEND adiciona um título para o agrupamento-->
+            <legend>INPUT'S</legend>
+            <!-- LABEL identifica o texto que identifica o campo de entrada de dados.
+            O atributo for indica que ao clicar no label o ponteiro do mouse terá seu foco no campo com aquele id-->
+            <label for="nome">Nome:</label>
+            <!-- O input é um campo de entrada básico. O type indica qual tipo de dado será solicitado, 
+            name é um identificador, placeholder uma mensagem de ajuda ao usuário e o id é um identificado para a tag. 
+            O id pode ter qualquer nome.
+        -->
+            <input type='text' name='nome' placeholder="Informe o nome" id='nome'>
+            <!-- A tag BR quebra a linha -->
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input type='tel' name='telefone' placeholder="Informe o telefone" id='telefone'>
+            <br>
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type='date' name='nascimento' id='nascimento'>
+            <br>
+            <label for="email">E-mail:</label>
+            <!-- O atributo required indica que aquele campo é obrigatório. Além disso, valida o campo antes de enviar -->
+            <input type='email' name='email' id='email' required>
+            
+            <!-- O uso de radio indica que uma opção daquele grupo deve ser selecionado.
+            Para isso os elementos que tratam sobre a mesma opção devem possuir mesmo nome e valores diferentes-->
+            <br>
+            <label for="simpromocoes">Quero receber promoções</label>
+            <input type='radio' name='promocoes' id='simpromocoes' value='s'>
+            <label for="naopromocoes">Não quero receber promoções</label>
+            <input type='radio' name='promocoes' id='naopromocoes' value='n'>
+
+            <!-- Quando mais de uma opção pode ser selecionada deve-se utilizar o checbox.
+            O value é importante tanto para o checkbox quanto para o radio, pois é esse valor que
+            será processado no envio do formulário. Todos elementos de input possuem value.
+            -->
+            <br>
+            <label for="concordo">Concordo com os termos</label>
+            <input type='checkbox' name='concordo' id='concordo' value='1'>
+        </fieldset>
+        <fieldset>
+            <legend>Select</legend>
+            <label for='curso'>Selecione o seu curso</label>
+            <!-- A tag SELECT exibe uma lista de seleção para o usuário. -->
+            <select name='curso' id='curso'>
+                <!-- As opções da lista devem ser inseridas com a tag option, todas com um valor-->
+                <option value=1>Informática</option>
+                <option value=2>Química</option>
+                <option value=3>Meio ambiente</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Text Area</legend>
+            <label for='comentario'>Faça um comentário</label><br>
+            <!-- A tag TEXTAREA deve ser utilizada para inserção de textos com mais linhas. 
+            Cols especifica quantas linhas terá e rows quantas colunas-->
+            <textarea id='comentario' cols='100' rows=10>
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Botões para submissão</legend>
+            <!-- Inserção de botão. Quando o botão é clicado o formulário é submetido. -->
+            <button>Enviar</button>
+            <!--Pode ser inserido um botão com o campo input também, com o type submit-->
+            <input type='submit' value='Enviar'>
+             <!--Pode ser inserido um botão com o campo input para reset do formulário-->
+             <input type='reset' value='Reset'>
+        </fieldset>
+    </form>
+</body>
+</html>
