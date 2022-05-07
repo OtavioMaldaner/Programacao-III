@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #181818;
+    color: #ededed;
+}
+body {
+    background-image: url(ney.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.titulo {
+    margin: 20% 0 20% 10%;
+}
+
+.titulo h1 {
+    color: #ededed;
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+}
+
+.titulo p {
+    color: #ededed;
+    font-size: 1.3rem;
+}
+
+.titulo p.dados {
+    opacity: 0.65;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+details {
+    padding: 30px;
+}
+
+details > p {
+    margin-left: 30px;
+    padding-top: 15px;
+}
+
+.formato, .episodios, .referencias {
+    max-width: 100%;
+    padding: 2% 10%;
+
+    background-color: #181818;
+}
+
+.trailer {
+    text-align: center;
+}
+
+a {
+    color:#ededed;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+}
