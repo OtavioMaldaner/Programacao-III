@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-areas: "c1 c2 c3"
+                         "c4 c5 c6"
+                         "c7 c8 c9";
+}
+.casa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#meio {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#casa1 {
+    grid-area: c1;
+}
+#casa2 {
+    grid-area: c2;
+}
+#casa3 {
+    grid-area: c3;
+}
+#casa4 {
+    grid-area: c4;
+}
+#casa5 {
+    grid-area: c5;
+}
+#casa6 {
+    grid-area: c6;
+}
+#casa7 {
+    grid-area: c7;
+}
+#casa8 {
+    grid-area: c8;
+}
+#casa9 {
+    grid-area: c9;
+}
