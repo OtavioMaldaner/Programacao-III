@@ -39,7 +39,7 @@ botoes.forEach(function(botao){
                 console.log(JSON.parse(localStorage.getItem("tablado")))
                 if(verificaVencedor(tablado_local)){
                     localStorage['vencedor']="X";
-                    alert("Venceu X");
+                    console.log("Venceu X");
                 }
             }else{
                 e.target.innerHTML = "O";
@@ -51,7 +51,7 @@ botoes.forEach(function(botao){
                 console.log(JSON.parse(localStorage.getItem("tablado")))
                 if(verificaVencedor(tablado_local)){
                     localStorage['vencedor']="O";
-                    alert("Venceu O");
+                    console.log("Venceu O");
                 }
             }
         }
