@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .container {
     display: grid;
@@ -19,6 +20,10 @@
     height: 100px;
     width: 100px;
     border: 2px solid black;
+}
+.casa:hover {
+    background-color: blue;
+    color: #fff;
 }
 #meio {
     display: flex;
